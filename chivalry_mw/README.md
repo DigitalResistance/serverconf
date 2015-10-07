@@ -6,9 +6,9 @@
 2. Make note of where the dedicated server files were installed
 > `set CHIV_MW_DED="C:\Program Files (x86)\Steam\SteamApps\common\chivalry_ded_server"`
 3. In %CHIV_MW_DED%\UDKGame\Config, create a new subdirectory for config specific to this dedicated server
-> `mkdir %CHIV_MW_DED%\UDKGame\Config\LANtasticServer`
+> `mkdir %CHIV_MW_DED%\UDKGame\Config\LanTest`
 4. Copy \*.ini from the base config directory to the newly created subdirectory
-> `copy %CHIV_MW_DED%\UDKGame\Config\*.ini %CHIV_MW_DED%\UDKGame\Config\LANtasticServer\`
+> `copy %CHIV_MW_DED%\UDKGame\Config\*.ini %CHIV_MW_DED%\UDKGame\Config\LanTest\`
 5. Copy the appropriate `PCServer-UDKGame.ini` and `PCServer-UDKEngine.ini` from the repo to the config subdirectory
 6. Copy `chivalry_mw_server.bat` to `%CHIV_MW_DED%`, name it whatever you like
 7. Edit the batch file, changing arguments to match the appropriate config subdirectory (note, the map should be the first defined in Maplist)
